@@ -26,8 +26,8 @@ services:
     networks:
       - docker-mern-stack-network
     volumes:
-      - ./express-docker:/appbackend
-      - /appbackend/node_modules
+      - ./express-docker:/app
+      - /app/node_modules
     depends_on:
       - mongodbprod
   mongodbprod:
